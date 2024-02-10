@@ -1,0 +1,13 @@
+prepare:
+    - name: Install
+      run: pnpm install
+    - name: Build
+      run: pnpm build
+
+test:
+    steps: []
+
+run:
+    steps:
+        - name: Run
+          command: pnpm preview
